@@ -1,0 +1,30 @@
+
+.main ul {
+		float: right;
+		margin:0;
+		}
+.main ul li:hover {
+	background-color:#af0c3e;
+	
+}
+.main ul li a:hover {
+	color:#fff;
+	
+}
+	.main ul li {
+		display: inline-block;
+	}
+	.main ul li a{
+		color: black;
+		border: 1.5px solid #000;
+		
+	}
+	.logo img{
+		float: center;
+		width: 250px;
+		height:auto;
+		backface-visibility:0% ;
+
+	}
+
+
