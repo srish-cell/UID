@@ -1,0 +1,180 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>Registration Form</title>
+<link rel="stylesheet" href="css/style1.css">
+<style>
+body{
+	background-image: url("img/avv.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+form{
+	padding-top: 50px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 80px;
+	background-color: #fff;
+	opacity: 0.75;
+	display: inline-block;
+	margin-left: 15%;
+    margin-right:15%;
+    width: 70%;
+}
+
+.Title h1{
+	text-align: center;
+	opacity: 1;
+}
+.name {
+	padding-left: 37%;
+	opacity: 1;
+}
+.mail {
+	opacity: 1;
+	padding-left: 38%;
+}
+.radio{
+	padding-left: 38%;
+	opacity: 1;
+}
+.password {
+	padding-left: 38%;
+	opacity: 1;
+}
+.re-password{
+	padding-left: 32.5%;
+	opacity: 1;
+}
+.Whatsapp_Num {
+	padding-left: 33%;
+}
+.InstitutionName {
+	padding-left: 26%;
+}
+.country {
+	padding-left: 39.25%;
+	opacity: 1;
+}
+.State {
+	padding-left: 41%;
+}
+.Department {
+	padding-left: 33%;
+}
+.chckbox{
+	padding-left: 20%;
+	font-size: medium;
+	font-weight: bolder;
+}
+.submit{
+	height: 40px;
+	width: 150px;
+	padding-left: 50%;
+	padding-top: 2px;
+	align-items: center;
+}
+</style>
+</head>
+<body>
+	<header margin="0">
+		<div class="main">
+			<<div class="logo">
+			<img src="img/hi.png">
+		</div>
+		<ul>
+			<li><a href="home1.html">HOME</a></li>
+			<li><a href="AboutUs1.html">ABOUT US</a></li>
+			<li><a href="#">CONTACT US</a></li>	
+		</ul>
+	</div>
+		
+	</header>
+	<form method="post" action="" align-content="center">
+	<div class="Box">
+		<div class="Title">
+			<h1 >Registration Form- Amrita CyberNation'22</h1>
+		</div>
+		<br>
+		<div class="name">
+			<label for="Fullname">Full Name: </label>
+			<input type="text" name="Fullname" id="Fullname" required 	pattern="[a-zA-z ]+"> 	
+		</div>
+		<br>
+		<div class="mail">
+
+			<label for="mailid">Email ID: </label>
+			<input type="text" name="email" id="mailid" required 	pattern="[a-z0-9.]+@[a-z]+\.[a-z]{2,4}"> 	
+		</div>
+		<br>
+		<div class="radio" required>
+			<label for="gender">Gender: </label>
+			<input type="radio" name="gender" id="Male"   >
+			<label for="Male">MALE</label> 
+			<input type="radio" name="gender" id="Female"   >
+			<label for="Female">FEMALE</label> 
+		</div>
+		<br>
+		<div class="password">
+			<label for="pass">Password: </label>
+			<input type="password" name="pass" id="pass" required 	pattern="[a-zA-Z0-9.!@#$/]{6-20}"> 	
+		</div>
+		<br>
+		<div class="re-password">
+			<label for="re-pass">Re Enter Password: </label>
+			<input type="text" name="re-pass" id="re-pass" required 	pattern="[a-zA-Z0-9.!@#$/]{6-20}"> 	
+		</div>
+		<br>
+		<div class="Whatsapp_Num">
+			<label for="whatsapp_num">Whatsapp Number: </label>
+			<input type="text" name="whatsappnum" id="whatsapp_num" required 	pattern="[0-9]{10}"> 	
+		</div>
+		<br>
+		<div class="InstitutionName">
+			<label for="Institute_Name">Institution/Organisation Name: </label>
+			<input type="text" name="institutename" id="Institute_Name" required 	pattern="[a-zA-z ]+"> 	
+		</div>
+		<br>
+		<div class="Department">
+			<label for="dept">Department Name: </label>
+			<input type="text" name="Fullname" id="dept"	pattern="[a-zA-z ]+"> 	
+		</div>
+		<br>
+		<div class="Country">
+			<label for="country">Country: </label>
+			<select name="Country" id="country">
+				<option value="NONE" selected hidden disabled>Select your country</option>
+				<option value="IND" selected>INDIA</option>
+				<option value="AUS">AUSTRALIA</option>
+				<option value="UK">UNITED KINGDOM</option>
+				<option value="USA">USA</option>
+				</select>
+		</div>
+		<br>
+		<div class="State">
+			<label for="state">State: </label>
+			<input type="text" name="State" id="state" required 	pattern="[a-zA-z ]+"> 	
+		</div>
+		<br>
+		<div class="chckbox" required>
+			<label for="Reg">Registering For: </label>
+			<input type="checkbox" name="comp" id="CyberConclave"   >
+			<label for="CyberConclave"> CYBER CONCLAVE (1st October 2022)</label> 
+			<input type="checkbox" name="comp" id="INDUSTRYMEET"   >
+			<label for="INDUSTRYMEET"> INDUSTRY MEET (8th October 2022)</label> 
+			<br>
+			<input type="checkbox" name="comp" id="CyberTECHFEST"   >
+			<label for="CyberTECHFEST"> CYBER TECH FEST (29th and 30th October 2022)</label> 	
+		</div>
+		<br>
+		<div class="submit">
+			<input type="submit" name="Submit" value="SUBMIT" align-content="center" />
+		</div>
+	</div>
+	</form>
+	<h5>DONE BY: SRISH N</h5>
+<h5>CH.EN.U4CYS21081</h5>
+</body>
+</html>
+

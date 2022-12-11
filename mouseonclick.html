@@ -1,0 +1,146 @@
+<!DOCTYPE hmtl>
+    <head>
+            <style>
+                img
+                {
+                    height: 400px;
+                }
+                body 
+                {
+                    background-image: url("img/bg.jpg");
+                   
+                }   
+              .ab{
+                background-color:#a8a7a76c;
+	            color: rgb(248, 10, 10);
+	            text-decoration: none;
+	            border: 2px solid transparent;
+	            font-weight: bold;
+                font-size: large;
+	            padding: 13px 30px;
+	            border-radius: 30px;
+	            transition: .4s; 
+              }
+                div>a{
+                    padding-left: 12px;
+
+                }
+                .txt{
+                    text-decoration: none;
+                    color: rgb(0, 0, 0);
+                }
+                a.txt:hover{
+                    color: #ffffff;
+                }
+
+
+            </style>
+            <script>
+            var i=0;
+            var j=0;
+            var d=0;
+            var h=0;
+            var s=0;
+            function leftclick()
+            {
+                if(i==0)
+                {
+                    document.getElementById("switch").src = "img/m1.jpg";
+                    i=1;
+                }
+                else
+                {
+                    document.getElementById("switch").src = "img/m2.jpg";
+                    i=0;
+                }
+            }
+            function hover()
+            {
+                
+                if(j==0)
+                {
+                    document.getElementById("pet").src = "img/m4.jpg";
+                    j=1;
+                }
+                else
+                {
+                    document.getElementById("pet").src = "img/m3.jpg";
+                    j=0;
+                }
+            }
+            function move()
+            {
+                if(d==0)
+                {
+                    document.getElementById("run").src = "img/m5.jpg";
+                    d=1;
+                }
+                else if(d==1)
+                {
+                    document.getElementById("run").src = "img/m6.jpg";
+                    d=0;
+                }
+                
+            }
+            function rightclick()
+            {
+                if(h==0)
+                {
+                    document.getElementById("eat").src="img/m10.jpg";
+                    h=1;
+                }
+
+                else
+                {
+                    document.getElementById("eat").src="img/m9.jpg";
+
+                    h=0;
+                }
+
+            }
+
+            function doubleclick()
+            {
+                if(s==0)
+
+                {
+                    document.getElementById("shake").src="img/m7.jpg";
+                    s=1;
+                }
+                else
+                {
+                    document.getElementById("shake").src="img/m6.jpg";
+                    s=0;
+                }
+            }
+        </script>
+</head>
+<body>
+    
+    <div class="ab" >
+        
+        <a class="txt" href="index.html">Index</a>
+        <a class="txt" href=".html">WELCOME TO MAGIC WITH MOUSE WEBPAGE</a>
+          
+    </div>
+    <p style="color: rgb(227, 227, 227);">SRISH N<br>CH.EN U4CYS21081</p> 
+
+    <center><h1 style="color: rgb(255, 156, 232);">Nature</h1>   
+        <h3 style="color: rgb(255, 156, 232);">Left Click</h3>
+
+        <img src="img/m1.jpg"  onclick="leftclick()" id="switch">
+        <br>
+        <h3 style="color:rgb(255, 156, 232);">Hover</h3>
+        <img src="img/m3.jpg" onmouseenter="hover()" onmouseleave="hover()" id="pet">
+        <br>
+        <h3 style="color:rgb(255, 156, 232);">Double Click</h3>
+        <img src="img/m7.jpg" height="300px"  ondblclick="doubleclick()" id="shake">
+        <br>
+        <h3 style="color:rgb(255, 156, 232);">Right Click</h3>
+        <img src="img/m10.jpg" height="300px" contextmenu="rightclick" oncontextmenu="rightclick()" id="eat">
+        <br>
+        <h3 style="color: rgb(255, 156, 232);">Move Mouse</h3>
+        <img src="img/m5.jpg" onmousedown="move()" onmouseup="move()" id="run">
+    </center>
+</body>
+</html>
