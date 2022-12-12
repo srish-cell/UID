@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>CGPA Calculator</title>
+	<script>
+		function cgpa(){
+			let m=[];let c=[];let sum=0;let credsum=0;
+			m.push(parseInt(document.getElementById("sub1").value));
+			m.push(parseInt(document.getElementById("sub2").value));
+			m.push(parseInt(document.getElementById("sub3").value));
+			m.push(parseInt(document.getElementById("sub4").value));
+			m.push(parseInt(document.getElementById("sub5").value));
+			m.push(parseInt(document.getElementById("sub6").value));
+			c.push(parseInt(document.getElementById("cred1").value));
+			c.push(parseInt(document.getElementById("cred2").value));
+			c.push(parseInt(document.getElementById("cred3").value));
+			c.push(parseInt(document.getElementById("cred4").value));
+			c.push(parseInt(document.getElementById("cred5").value));
+			c.push(parseInt(document.getElementById("cred6").value));
+			for(let i=0;i<6;i++){
+				sum=sum+(m[i]*c[i])
+				
+			}
+			console.log(sum);
+			for(let i=0;i<6;i++){
+				credsum=credsum+c[i]
+				}
+			console.log(credsum);
+			let totsum=sum/credsum;
+			console.log(totsum);
+			totsum=totsum/100
+			document.getElementById("ans").innerHTML="The CGPA is "+(totsum*10);
+		}
+	</script>
+</head>
+<body>
+	<h1>CGPA Calculator</h1>
+	<p>Subject 1 : <input type="text" id="sub1"> Credits <input type="text" id="cred1">
+	<p>Subject 2 : <input type="text" id="sub2"> Credits <input type="text" id="cred2">
+	<p>Subject 3 : <input type="text" id="sub3"> Credits <input type="text" id="cred3">
+	<p>Subject 4 : <input type="text" id="sub4"> Credits <input type="text" id="cred4">
+	<p>Subject 5 : <input type="text" id="sub5"> Credits <input type="text" id="cred5">
+	<p>Subject 6 : <input type="text" id="sub6"> Credits <input type="text" id="cred6">
+	<button onclick="cgpa()">Calculate</button>
+	<p id="ans"></p>
+</body>
+</html>
